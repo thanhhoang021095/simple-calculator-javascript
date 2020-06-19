@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator Webb App</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="calc-title">The Worst Calculator Ever</h1>
+        <div class="calc-table">
+            <!-- calculator screen -->
+            <div id="calc-screen" class="screen">0
+            </div>
+            <!-- end of calculator screen -->
+
+            <!-- calculator monitor -->
+            <div class="calc-monitor">
+
+                <!-- Number Buttons -->
+                <div class="number-keypart">
+                    <button type="button" value="6" class="number-btn" onclick="getNumber(this)">6</button>
+                    <button type="button" value="7" class="number-btn" onclick="getNumber(this)">7</button>
+                    <button type="button" value="8" class="number-btn" onclick="getNumber(this)">8</button>
+                    <button type="button" value="9" class="number-btn" onclick="getNumber(this)">9</button>
+                    <button type="button" value="2" class="number-btn" onclick="getNumber(this)">2</button>
+                    <button type="button" value="3" class="number-btn" onclick="getNumber(this)">3</button>
+                    <button type="button" value="4" class="number-btn" onclick="getNumber(this)">4</button>
+                    <button type="button" value="5" class="number-btn" onclick="getNumber(this)">5</button>
+                    <button type="button" value="0" class="number-btn" onclick="getNumber(this)">0</button>
+                    <button type="button" value="1" class="number-btn" onclick="getNumber(this)">1</button>
+                    <button type="button" value="." class="decimal-btn" onclick="getNumber(this)">.</button>
+                    <button type="button" value="all-clear" class="clear-btn" onclick="reset()">C</button>
+                </div>
+                <!-- End of Number Buttons -->
+
+                <!-- Operator buttons -->
+                <div class="operator-keypart">
+                    <button type="button" class="operator-btn" value="nepos" onclick="getNumber(this)">&#8723;</button>
+                    <button type="button" class="operator-btn" value="+" onclick="getOperator(this)">+</button>
+                    <button type="button" class="operator-btn" value="-" onclick="getOperator(this)">-</button>
+                    <button type="button" class="operator-btn" value="*" onclick="getOperator(this)">&#xD7;</button>
+                    <button type="button" class="operator-btn" value="/" onclick="getOperator(this)">&#xF7;</button>
+                    <button type="button" class="equal-btn" value="=" onclick="getOperator(this)">=</button>
+                </div>
+                <!-- End of Operator buttons -->
+            </div>
+
+            <!-- End of calculator monitor -->
+
+        </div>
+    </div>
+    <script src="final.js"></script>
+</body>
+
+</html>
